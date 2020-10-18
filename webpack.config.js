@@ -12,12 +12,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.bundle.js'
-  }
+  },
   plugins: [
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['public'] }
+      server: { baseDir: ['../todo_ozon_1'] }
     })
   ]
 };
